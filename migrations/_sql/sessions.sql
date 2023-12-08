@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS `sessions` (
+    `token` VARCHAR(300) PRIMARY KEY,
+    `user_id` VARCHAR(200) NOT NULL,
+    `expiration` DATETIME NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
